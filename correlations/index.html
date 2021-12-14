@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Correlation</title>
+        <link rel="stylesheet" href='styles.css'>
+    </head>
+    <body>
+        <div class='correlationContainer'>
+            <h3 class="corApplet-header" id="corApplet-coefficient"></h3>
+            <h3 class="corApplet-header" id="corApplet-strength"></h3>
+            <svg id="correlationPlot"></svg>
+            <div class="slideContainer">
+                <input type="range" min="0" max="4" value="0" class="slider" id="correlationSlider">
+            </div>    
+        </div>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="data.js"></script>
+        <script src="correlation.js"></script>
+    </body>
+</html>
